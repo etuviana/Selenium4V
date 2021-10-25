@@ -1,19 +1,19 @@
 # Selenium 4 Version
-Code example about new feature 
-BadCertificate
-BlockResources
-ConsoleLog
-CustomHeader
-ElementScreenShot
-FullPageScreenShot
-FullScreen
-GeoLocation
-NetworkSpeed
-ParentFrame
-PerformanceMetrics
-PrintCookeis
-RelativeLocator
-TimeZone
-UserAgent
-Waits
-WindowAndTab
+## Code example about new feature 
+- Bad Certificate
+- Block Resources
+- Console Log
+- Custom Header
+- Element ScreenShot
+- Full Page ScreenShot
+- Full Screen
+- Geo Location
+- Network Speed
+- Parent Frame
+- Performance Metrics
+- Print Cookeis
+- Relative Locator
+- Time Zone
+- User Agent
+- Waits
+- Window And Tab
