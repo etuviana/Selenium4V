@@ -15,11 +15,10 @@ public class PerformanceMetrics {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        DevTools devTools = ((ChromeDriver) driver).getDevTools();
-        devTools.createSession();
-        devTools.send(Performance.enable(Optional.of(Performance.EnableTimeDomain.TIMETICKS)));
         driver.get("https://google.com");
-        List<Metric> metrics = devTools.send(getMetrics());
-        metrics.forEach(metric -> System.out.println(metric.getName() + ":" + metric.getValue()));
+        DevTools devTools = ((ChromeDriver) driver).getDevTools();
+        devTools.send(Performance.enable(Optional.empty()));
+        List<Metric> metrics = devTools.send(Performance.getMetrics());
+        metrics.forEach(metric-> System.out.println(metric.getName() +" : "+ metric.getValue() ));
     }
 }
